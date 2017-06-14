@@ -15,6 +15,8 @@ En la carpeta *source* estan generados los mapas con [bokeh][bokehlink] en un ht
 - [Mapa de calor Como Ir 2013][comoir2013]
 - [Mapa de calor Como Ir 2014][comoir2014]
 
+Asi se ve el mapa generado para el 2011. Las zonas mas rojas (o más calientes) son las que tienen mayor cantidad de destinos y las mas azules (o frías) son las que tienen menor cantidad de destinos buscados. En principio no parece muy loco que barrios como *Ciudad Vieja*, *Centro*, *Cordon*, *Parque Batlle*, *Pocitos* y *Punta Carretas* concentren el mayor "flujo de pasajeros" ya que en dichos barrios estarian concentradas las zonas comerciales, laborales, universidades, etc.
+
 ![alt text][img2011]
 
 ## Configuración
@@ -33,10 +35,6 @@ El notebook esta desarrollado y probado en una Mac con 8 Gb de RAM utilizando la
 
 ## Los Datos
 Los datos no estan subidos al repositorio porque son pesados (al menos algunos de ellos) y demoran en subir e incluso algunas veces me dieron error. Asi que decidí poner algunas funciones para descargar todos los archivos necesarios (y alguno que no termine usando tambien). Las funciones para la descarga las tome prestadas de un [MOOC sobre TensorFlow en Udacity][mooctensorflow]. La descarga y extraccion de los datos se hace en el /DesafioComoIr/data (si no existe el folder data dentro del folder DesafioComoIr lo crea). El codigo esta en /DesafioComoIr/source/movilidad_urbana.ipynb.
-
-
-; el csv del 2010 es el más chico por lo que es más manejable pero el resto va en incremento. Los mapas estan generados con [matplotlib][pltlink] y [bokeh][bokehlink] usando esquemas de colores generados con [ColorBrewer][cbrewerlink].
-
 
 [gmoncemedium]: https://medium.com/@gmonce/cinco-desaf%C3%ADos-de-ciencia-de-datos-bad99448b7f7
 [mooctensorflow]: https://www.udacity.com/course/deep-learning--ud730
